@@ -1,0 +1,11 @@
+Class com.dvp.tld.article.pojotester.domaine.Chat has bad 'hashCode' method implementation.
+The hashCode method should return different hash codes for non equal objects.
+Current implementation returns same hash codes.
+Object:
+Chat [name=www.pojo.pl, age=-4, poids=0.0, moustache=null, petits=null]
+and
+Chat [name=www.pojo.pl, age=-4, poids=-2.5, moustache=null, petits=null]
+should have different hash codes:
+1122311828
+and
+1122311828
