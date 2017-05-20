@@ -11,6 +11,8 @@ public class Chien {
 	private double taille; // Taille exprimee en metre
 	private Date dateNaissance;
 	private List<String> couleurs;
+	
+	// private boolean mechant; // juste getter/setter
 
 	public Chien() {
 		// Rien
@@ -121,5 +123,13 @@ public class Chien {
 	public void setCouleurs(List<String> couleurs) {
 		this.couleurs = couleurs;
 	}
+	
+//	public boolean isMechant() {
+//		return mechant;
+//	}
+//
+//	public void setMechant(boolean mechant) {
+//		this.mechant = mechant;
+//	}
 
 }

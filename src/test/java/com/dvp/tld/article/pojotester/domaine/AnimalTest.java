@@ -27,6 +27,19 @@ public class AnimalTest {
 				.areWellImplemented();
 	}
 
+	@Ignore
+	@Test
+	public void testPojoLapinFailed() {
+		// Arrange
+		final Class<?> classUnderTest = Lapin.class;
+
+		// Act
+
+		// Assert
+		assertPojoMethodsFor(classUnderTest) //
+				.areWellImplemented();
+	}
+
 	@Test
 	public void testPojoLapin() {
 		// Arrange
@@ -38,8 +51,6 @@ public class AnimalTest {
 		assertPojoMethodsFor(classUnderTest) //
 				.testing(GETTER) //
 				.testing(TO_STRING) //
-				// .testing(EQUALS) //
-				// .testing(HASH_CODE) //
 				.testing(EQUALS, HASH_CODE) //
 				.testing(CONSTRUCTOR) //
 				.areWellImplemented();
@@ -97,6 +108,10 @@ public class AnimalTest {
 		assertPojoMethodsFor(classUnderTest, exclude("poids", "moustache", "petits")) //
 				.testing(EQUALS, HASH_CODE) //
 				.testing(CONSTRUCTOR) //
+				.areWellImplemented();
+
+		assertPojoMethodsFor(classUnderTest, exclude("name", "age")) //
+				.testing(SETTER) //
 				.areWellImplemented();
 
 		assertPojoMethodsFor(classUnderTest) //
