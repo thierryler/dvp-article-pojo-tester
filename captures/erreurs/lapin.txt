@@ -1,2 +1,2 @@
 Tests in error: 
-  testPojoLapin(com.dvp.tld.article.pojotester.domaine.ChienTest): Class com.dvp.tld.article.pojotester.domaine.Lapin has no setter for field private final java.lang.String com.dvp.tld.article.pojotester.domaine.Lapin.name
+  testPojoLapinFailed(com.dvp.tld.article.pojotester.domaine.AnimalTest): Class com.dvp.tld.article.pojotester.domaine.Lapin has no setter for field private final java.lang.String com.dvp.tld.article.pojotester.domaine.Lapin.name
